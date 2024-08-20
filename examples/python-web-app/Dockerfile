@@ -1,4 +1,6 @@
 FROM ubuntu
+# Set environment variable to bypass the PEP 668 restriction
+ENV PIP_BREAK_SYSTEM_PACKAGES=1
 
 WORKDIR /app
 
